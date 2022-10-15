@@ -22,7 +22,7 @@
 </head>
 <body>
   <div class="audio"> 
-    <audio src="./src/audio/music.mp3" autoplay loop></audio>
+    <audio src="./src/audio/music.mp3" autoplay loop muted></audio>
   </div>
   <main class="cartao">
     
@@ -38,12 +38,13 @@
         <li class="aba selecionado" id="sobre-mim">
           <img src="./src/images/info.gif" alt="ícone de sobre mim">
         </li>
+        <li class="aba" id="meus-projetos"> 
+          <img src="./src/images/check.gif" alt="ícone de redes sociais">
+        </li>
         <li class="aba" id="minhas-redes">
           <img src="./src/images/social.gif" alt="ícone de redes sociais">
         </li>
-        <!-- <li class="aba" id="meus-projetos"> 
-          <img src="./src/images/social.gif" alt="ícone de redes sociais">
-        </li>-->
+        
       </ul>
 
       <div class="informacoes-abas">
@@ -77,34 +78,34 @@
           </div>
         </div>
 
-        <!-- <div class="informacao selecionado" id="informacao-meus-projetos"> 
-          <h3 class="sub-titulo">Sobre</h3>
-
-          <div class="descricao">
-            <p>
-              <span>Olá</span>, tudo bem? Meu nome é <span>Jonathan</span>!
-            </p><br>
-            <p>
-              Estou <span> graduando Engenharia de Software</span> na Faculdade IESB e estou <span>em</span> processo de <span>transição de carreira</span> para a área de desenvolvimento <span>Front-end</span>. 
-            </p><br>
-            <p>
-              Sou <span>empresário</span>, dono de uma empresa de locação de veículos, há aproximadamente <span>2 anos e meio</span>. Onde sou responsável por <span>administrar</span> e <span>alugar</span> 
-              esses veículos. Sou uma <span>pessoa extremamente organizada</span> e <span>metódica</span>, tenho um <span>bom relacionamento interpessoal</span>, estou sempre <span>em busca</span> 
-              de uma <span>oportunidade</span> para <span>desenvolver</span> e <span>melhorar</span> meus conhecimentos <span>continuamente</span>, assim como estou <span>disposto</span> 
-              a <span>compartilhar conhecimentos</span> e <span>experiências</span> com outras pessoas.
-            </p><br>
-            <p>
-              Atualmente estou focado nas tecnologias <span>HTML</span> | <span>CSS</span> | <span>Javascript</span>, estudando pelo curso Explorer da <span>Rocketseat</span>.
-            </p><br>
-            <p>
-              Possuo alguns projetos desenvolvidos durante os estudos, no GitHub: <a href="https://github.com/desenvjonathan" target="_blank">(https://github.com/desenvjonathan)</a>com foco nas tecnologias: 
-              <span>HTML</span> | <span>CSS</span>
-            </p><br>
-            <p>
-              E por fim, meu <span>objetivo</span> num futuro próximo, é me tornar <span>desenvolvedor front-end</span> (talvez fullstack) <span>WEB</span> e <span>Mobile</span>.
-            </p><br>
-          </div>
-        </div>-->
+        <div class="informacao" id="informacao-meus-projetos"> 
+          <h3 class="sub-titulo">Meus Projetos</h3>
+          <ul class="meus-projetos">
+            <li>
+              <a href="https://github.com/desenvjonathan/nlw-esports-explorer" target="_blank" class="projeto">NLW eSports<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/what-i-watch" target="_blank" class="projeto">What I Watch1<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/form03" target="_blank" class="projeto">Formulário 03<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/form02" target="_blank" class="projeto">Formulário 02<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/form01" target="_blank" class="projeto">Formulário 01<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/layout03" target="_blank" class="projeto">Layout 03<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/layout02" target="_blank" class="projeto">Layout 02<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+            <li>
+              <a href="https://github.com/desenvjonathan/layout01" target="_blank" class="projeto">Layout 01<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRoge2ZMU8UQRiG39kQaIBQY2JtIhT+ARM6CgPGgkYtTShUKkJLqQn/ABMbG3oK7C3uCkULo79ActCg0GDBY+G3x+Zg92Zv93ZWM0+yyd3NOzvvu9/tXL49KdJSgCngBdABzu3oAOvARGh/XgC3gM/k8wGYC+2zEKtEGuIbsArM2PEQ+G5j7wEX2m8uwMtMiGtXHZjLhFkJ4dELoGsmVws0j0yz16S3MjjgTNK0pFnn3NlNImBW0s9GnZXEAUiSc67w+5/q2koS2kBdxCBtIwZpGzHImHjtchg2sW1BtoBXo0xsMsippBMP3RawWfbkTQX5IWlJ0n1JR0O0J5IOSq+QNhy+uhE4BOYz51kAejnaY2Axo9v0XX/cQQ6AGZu/BNwtCDMYIh3fDh3kDdYiA0+ACzN3U5i8ECnbIYJcYlfR5m3YZylZ03eALwPvj0qsNbYgF8BT008Auzm6HrBguqSgEkGC/AKWTTsN7A/RD1ZmpEr0/fdfVA/y1nTzwCfP9XvAGhUqkVJ3h7gjaU3SbQ9trcRWt23EIG2jH4Srh9hdrh5id4HnwFRIk15kdrCPBbtb0Vgjm4D39lsFnw6uKsN81hKkDfx/N/u/TiLpPLSJOkgkfQ1tog4SSe9Cm6gDB0xK6ki6F9pMFRLn3G9JDyQdhjZThf4PmVXmmaTHkhb19++4SCQSiUSK+AOaZ4Jr4kbWhQAAAABJRU5ErkJggg==" alt="ícone para representar um projeto"></a>
+            </li>
+        </div>
 
         <div class="informacao" id="informacao-minhas-redes">
           <h3 class="sub-titulo">Minhas Redes</h3>
@@ -117,6 +118,9 @@
             </li>
             <li>
               <a href="https://github.com/desenvjonathan" target="_blank" class="github">GitHub<img src="./src/images/github.svg" alt="ícone do github"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jon_ramos97/" target="_blank" class="instagram">Instagram<img src="./src/images/instagram.svg" alt="ícone do instagram"></a>
             </li>
           </ul>
         </div>

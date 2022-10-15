@@ -1,6 +1,6 @@
 # Portfólio
 
-![preview](./.github/preview.png)
+![preview](./.github/preview.gif)
 
 > Jonathan Ramos
 

@@ -65,7 +65,7 @@ body {
 }
 
 .cartao .abas img {
-  width: 40px;
+  width: 39px;
 }
 
 .cartao .abas .aba.selecionado {
@@ -116,11 +116,50 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
+.meus-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.meus-projetos li a {
+  width: 250px;
+  color: #F3F3F3;
+  padding: 9.2px;
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.meus-projetos .projeto {
+  background-color: #00444e;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.meus-projetos .projeto:hover {
+  background-color: #32c4d5;
+}
+
+.meus-projetos .projeto img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-left: 83%;
+}
+
 .redes-sociais {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
 }
 
 .redes-sociais li a {
@@ -131,8 +170,6 @@ body {
   padding: 9.2px;
   font-size: 20px;
   transition: opacity 0.3s ease-in-out;
-  max-height: 180px;
-  overflow-y: auto;
 }
 
 .redes-sociais .curriculo {
@@ -141,7 +178,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 24.5%;
+  gap: 23.8%;
 }
 
 .redes-sociais .curriculo:hover {
@@ -159,7 +196,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 26%;
+  gap: 25.7%;
 }
 
 .redes-sociais .linkedin:hover {
@@ -177,7 +214,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 29.5%;
+  gap: 28.9%;
 }
 
 .redes-sociais .github:hover {
@@ -185,6 +222,24 @@ body {
 }
 
 .redes-sociais .github img {
+  width: 25px;
+  height: 25px;
+}
+
+.redes-sociais .instagram {
+  background-color: #6c205f;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 23.8%;
+}
+
+.redes-sociais .instagram:hover {
+  background-color: #ee3acf;
+}
+
+.redes-sociais .instagram img {
   width: 25px;
   height: 25px;
 }

@@ -13,13 +13,13 @@ body {
   padding: 30px;
 }
 
-.cartao {
+.card {
   background: rgba(7, 13, 18, 0.7);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(7, 13, 18, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(7, 13, 18, 0.01);
   width: 370px;
   border: 2px solid #4bdff1;
   border-radius: 10px;
@@ -27,7 +27,7 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   box-shadow: 0 0 60px #4bdff1;
 }
 
-.cartao .minhas-informacoes {
+.card .my-infos {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -35,33 +35,33 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   gap: 10px;
 }
 
-.cartao .minhas-informacoes img {
+.card .my-infos img {
   border-radius: 50%;
   border: 4px solid #4bdff1;
   width: 100px;
   height: 100px;
 }
 
-.cartao .minhas-informacoes .nome {
+.card .my-infos .name {
   font-size: 26px;
   font-family: 'Signika Negative', monospace;
 }
 
-.cartao .minhas-informacoes .cargo {
+.card .my-infos .office {
   font-size: 20px;
   color: #B8BBC5;
 }
 
-.cartao .conteudo {
+.card .content {
   background-color;
   margin-top: 15px;
 }
 
-.cartao .abas {
+.card .tabs {
   display: flex;
 }
 
-.cartao .abas .aba {
+.card .tabs .tab {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -70,59 +70,59 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   transition: background-color 0.2s ease-in-out;
 }
 
-.cartao .abas img {
+.card .tabs img {
   width: 39px;
 }
 
-.cartao .abas .aba.selecionado {
+.card .tabs .tab.selected {
   background-color: #262626;
 }
 
-.cartao .informacoes-abas {
+.card .infos-tabs {
   background-color: #262626;
 }
 
-.cartao .abas .aba:hover {
+.card .tabs .tab:hover {
   background: #414141;
 }
 
-.informacoes-abas .informacao {
+.infos-tabs .info {
   min-height:: 260px;
   padding: 15px;
   display: none;
 }
 
-.informacoes-abas .informacao.selecionado {
+.infos-tabs .info.selected {
   display: block;
 }
 
-.informacoes-abas .sub-titulo {
+.infos-tabs .sub-title {
   font-size: 22px;
   margin-bottom: 25px;
   text-align: center;
 }
 
-.informacoes-abas .descricao {
+.infos-tabs .description {
   font-size: 20px;
   max-height: 180px;
   overflow-y: auto;
   padding-right: 15px;
 }
 
-.informacoes-abas .descricao span {
+.infos-tabs .description span {
   color: #ff20f4;
 }
 
-.informacoes-abas .descricao a {
+.infos-tabs .description a {
   color: #ff20f4;
 }
 
-.informacoes-abas .descricao a:hover {
+.infos-tabs .description a:hover {
   color: #4bdff1;
   transition: color 0.3s ease-in-out;
 }
 
-.meus-projetos {
+.my-projects {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -131,7 +131,7 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   overflow-y: auto;
 }
 
-.meus-projetos li a {
+.my-projects li a {
   width: 250px;
   color: #F3F3F3;
   padding: 11.7px;
@@ -139,7 +139,7 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   transition: opacity 0.3s ease-in-out;
 }
 
-.meus-projetos .projeto {
+.my-projects .project {
   background-color: #00444e;
   border-radius: 4px;
   display: flex;
@@ -148,18 +148,18 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   position: relative;
 }
 
-.meus-projetos .projeto:hover {
+.my-projects .project:hover {
   background-color: #32c4d5;
 }
 
-.meus-projetos .projeto img {
+.my-projects .project img {
   width: 25px;
   height: 25px;
   position: absolute;
   margin-left: 83%;
 }
 
-.redes-sociais {
+.social-networks {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -168,7 +168,7 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   overflow-y: auto;
 }
 
-.redes-sociais li a {
+.social-networks li a {
   width: 250px;
   display: block;
   color: #F3F3F3;
@@ -178,7 +178,7 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   transition: opacity 0.3s ease-in-out;
 }
 
-.redes-sociais .curriculo {
+.social-networks .curriculo {
   background-color: #005c3f;
   border-radius: 4px;
   display: flex;
@@ -187,16 +187,16 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   gap: 23.8%;
 }
 
-.redes-sociais .curriculo:hover {
+.social-networks .curriculo:hover {
   background-color: #06C185;
 }
 
-.redes-sociais .curriculo img {
+.social-networks .curriculo img {
   width: 25px;
   height: 25px;
 }
 
-.redes-sociais .linkedin {
+.social-networks .linkedin {
   background-color: #003c5a;
   border-radius: 4px;
   display: flex;
@@ -205,16 +205,16 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   gap: 25.7%;
 }
 
-.redes-sociais .linkedin:hover {
+.social-networks .linkedin:hover {
   background-color: #268ec3;
 }
 
-.redes-sociais .linkedin img {
+.social-networks .linkedin img {
   width: 25px;
   height: 25px;
 }
 
-.redes-sociais .github {
+.social-networks .github {
   background-color: #3e3e3e;
   border-radius: 4px;
   display: flex;
@@ -223,16 +223,16 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   gap: 28.9%;
 }
 
-.redes-sociais .github:hover {
+.social-networks .github:hover {
   background-color: #8d8d8d;
 }
 
-.redes-sociais .github img {
+.social-networks .github img {
   width: 25px;
   height: 25px;
 }
 
-.redes-sociais .instagram {
+.social-networks .instagram {
   background-color: #6c205f;
   border-radius: 4px;
   display: flex;
@@ -241,11 +241,11 @@ border: 1px solid rgba(7, 13, 18, 0.01);
   gap: 23.8%;
 }
 
-.redes-sociais .instagram:hover {
+.social-networks .instagram:hover {
   background-color: #ee3acf;
 }
 
-.redes-sociais .instagram img {
+.social-networks .instagram img {
   width: 25px;
   height: 25px;
 }

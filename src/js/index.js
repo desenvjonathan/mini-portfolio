@@ -22,44 +22,44 @@
 */
 
 //passo 1 - dar um jeito de pegar os elementos que representam as abas no HTML
-const abas = document.querySelectorAll(".aba");
+const tabs = document.querySelectorAll(".tab");
 
 
 //forEach (para cada), ou seja, para cada item da lista abas
-abas.forEach(aba => {
+tabs.forEach(tab => {
   //- passo 2 - dar um jeito de identificar o clique no elemento da aba
-  aba.addEventListener("click", function() {
+  tab.addEventListener("click", function() {
     //ctrl + ; COMENTA A LINHA DE CÓDIGO
     //se a minha aba contém essa classe "selecionado", parar o código com o return sem valor
-    if(aba.classList.contains("selecionado")){
+    if(tab.classList.contains("selected")){
       return;
     };
 
-    selecionarAba(aba)
+    selectTab(tab)
 
-    mostrarInformacoesDaAba(aba)
+    showInfosTab(tab)
   });
 });
 
-function selecionarAba(aba) {
+function selectTab(tab) {
   //- passo 3 - quando o usuário clicar, desmarcar a aba selecionada
-  const abaSelecionada = document.querySelector(".aba.selecionado");
-  abaSelecionada.classList.remove("selecionado");
+  const tabSelected = document.querySelector(".tab.selected");
+  tabSelected.classList.remove("selected");
 
   //- passo 4 - marcar a aba clicada como selecionado
-  aba.classList.add("selecionado");
+  tab.classList.add("selected");
 }
 
-function mostrarInformacoesDaAba(aba) {
+function showInfosTab(tab) {
   //- passo 5 - esconder o conteúdo anterior
-  const informacaoSelecionada = document.querySelector(".informacao.selecionado");
-  informacaoSelecionada.classList.remove("selecionado");
+  const infoSelected = document.querySelector(".info.selected");
+  infoSelected.classList.remove("selected");
 
   // - passo 6 - mostrar o conteúdo da aba selecionada
   //código para pegar o ID da aba selecionada
-  const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`;
+  const idElementInfosTab = `info-${tab.id}`;
 
   //adiciona o ID do elemento que eu quero mostrar ao clicar
-  const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba)
-  informacaoASerMostrada.classList.add("selecionado");
+  const infoToBeShown = document.getElementById(idElementInfosTab)
+  infoToBeShown.classList.add("selected");
 }

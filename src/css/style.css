@@ -107,6 +107,7 @@ body {
   max-height: 180px;
   overflow-y: auto;
   padding-right: 15px;
+  text-align: justify;
 }
 
 .infos-tabs .description span {
